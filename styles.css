@@ -1,0 +1,96 @@
+html, body, button, div {
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  background: transparent;
+}
+
+.title-bar-controls {
+  flow: horizontal;
+}
+
+.title-text {
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 0;
+  margin-right: 24px;
+  text-shadow: 1px 1px #0f1089;
+}
+
+[role="window-caption"] {
+  padding-left: 3px;
+
+}
+
+header {
+  flow: horizontal;
+  font-family: Trebuchet MS;
+  background-image: url(theme/titlebar.png);
+  padding: 3px 5px 3px 3px;
+  border-top: 1px solid #0831d9;
+  border-left: 1px solid #0831d9;
+  border-right: 1px solid #001ea0;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 7px;
+  font-size: 13px;
+}
+
+button {
+  width: 21px;
+  height: 21px;
+  margin-left: 2px;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  box-shadow: none;
+  border: none;
+}
+
+button[role=window-close] {
+  background-image: url(theme/close.svg);
+}
+
+button[role=window-close]:hover {
+  background-image: url(theme/close-hover.svg);
+}
+
+button[role=window-close]:active {
+  background-image: url(theme/close-active.svg);
+}
+
+button[role=window-maximize] {
+  background-image: url(theme/maximize.svg);
+}
+
+button[role=window-maximize]:hover {
+  background-image: url(theme/maximize-hover.svg);
+}
+
+button[role=window-maximize]:active {
+  background-image: url(theme/maximize-active.svg);
+}
+
+button[role=window-minimize] {
+  background-image: url(theme/minimize.svg);
+}
+
+button[role=window-minimize]:hover {
+  background-image: url(theme/minimize-hover.svg);
+}
+
+button[role=window-minimize]:active {
+  background-image: url(theme/minimize-active.svg);
+}
+
+button[title=Help] {
+  background-image: url(theme/help.svg);
+}
+
+button[title=Help]:hover {
+  background-image: url(theme/help-hover.svg);
+}
+
+button[title=Help]:active {
+  background-image: url(theme/help-active.svg);
+}

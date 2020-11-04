@@ -1,0 +1,23 @@
+if (view.connectToInspector) { 
+  view.connectToInspector(rootElement, inspectorIpAddress);
+}
+
+function self.ready() {
+  const w = self.intrinsicWidthMax();
+  const h = self.intrinsicHeight(w);
+  const (sw, sh) = view.screenBox(#frame, #dimension);
+  view.move((sw / 2) - (w / 2), (sh / 2) - (h / 2), w, h, true);
+  view.windowResizable = false;
+}
+
+view << event statechange { 
+  view.windowTopmost = true;
+};
+
+$([title=Help]).on("click", function() {
+  view.msgbox(
+    #information,
+    "Place an image named image.png in this folder.<br><br>This application uses Sciter Engine (https://sciter.com), © Terra Informatica Software, Inc.,<br>and XP.css (https://botoxparty.github.io/XP.css/).",
+    "About PNG Overlay"
+  );
+});
